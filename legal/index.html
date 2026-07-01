@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CleanSwipe Legal</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7fbff;
+      --card: #ffffff;
+      --text: #0b1728;
+      --muted: #5f6f83;
+      --blue: #3478f6;
+      --line: #dce7f2;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, var(--bg), #ffffff);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 22px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.2rem, 8vw, 4.2rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+    p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .links {
+      display: grid;
+      gap: 14px;
+      margin-top: 30px;
+    }
+    a.card {
+      display: block;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.82);
+      color: var(--text);
+      text-decoration: none;
+      box-shadow: 0 18px 42px rgba(52, 120, 246, 0.08);
+    }
+    a.card strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--blue);
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>CleanSwipe Legal</h1>
+    <p>
+      CleanSwipe is a privacy-first photo cleanup assistant. Photos are scanned
+      locally on device, and cleanup decisions stay under user control.
+    </p>
+    <div class="links">
+      <a class="card" href="./privacy.html">
+        <strong>Privacy Policy</strong>
+        How CleanSwipe handles photos, purchases, and data collection.
+      </a>
+      <a class="card" href="./terms.html">
+        <strong>Terms of Use</strong>
+        Subscription terms, AI Best Shot behavior, cancellation, and EULA.
+      </a>
+    </div>
+  </main>
+</body>
+</html>

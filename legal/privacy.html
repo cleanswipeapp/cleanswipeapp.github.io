@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CleanSwipe Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7fbff;
+      --card: #ffffff;
+      --text: #0b1728;
+      --muted: #5f6f83;
+      --blue: #3478f6;
+      --green: #20c66b;
+      --line: #dce7f2;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, var(--bg), #ffffff);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 22px 72px;
+    }
+    nav {
+      margin-bottom: 28px;
+    }
+    nav a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2.1rem, 7vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 1.35rem;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+    .meta {
+      color: var(--green);
+      font-weight: 700;
+    }
+    .card {
+      margin-top: 24px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.84);
+      box-shadow: 0 18px 42px rgba(52, 120, 246, 0.08);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav><a href="./index.html">CleanSwipe Legal</a></nav>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: June 11, 2026</p>
+
+    <div class="card">
+      <p>
+        CleanSwipe is designed to clean up a photo library without uploading the
+        user's photos. The current build has no backend account system, analytics
+        SDK, ad SDK, crash-reporting SDK, or cloud sync.
+      </p>
+    </div>
+
+    <h2>Photo Library</h2>
+    <p>
+      CleanSwipe scans photos and videos locally on the user's device through
+      Apple's PhotoKit framework. Photo and video content is not uploaded by
+      CleanSwipe in this build.
+    </p>
+
+    <h2>Cleanup Control</h2>
+    <p>
+      Swipe decisions only create a cleanup list. Photos and videos are not
+      deleted until the user reviews the summary and confirms deletion through
+      the system Photos confirmation flow.
+    </p>
+
+    <h2>AI Best Shot</h2>
+    <p>
+      AI Best Shot recommendations are generated locally from photo quality
+      signals such as focus, lighting, contrast, and composition. AI recommends
+      likely keepers but does not delete photos automatically.
+    </p>
+
+    <h2>Purchases</h2>
+    <p>
+      Premium entitlement is handled by StoreKit and the App Store. CleanSwipe
+      does not run a purchase backend, collect receipts, store payment
+      information, or process payment card data.
+    </p>
+
+    <h2>Data Collection</h2>
+    <p>
+      This build does not collect user, device, usage, diagnostic, photo, video,
+      purchase receipt, or location data on a CleanSwipe server or third-party
+      analytics service.
+    </p>
+
+    <h2>App Store Privacy Label</h2>
+    <p>
+      For the current no-backend build, CleanSwipe's App Store privacy answers
+      should state that no data is collected by the app. If analytics,
+      crash-reporting, accounts, sync, support forms, or any backend service are
+      added later, this policy and App Store Connect privacy answers must be
+      updated before release.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For privacy or support questions, use the support link listed on
+      CleanSwipe's App Store product page.
+    </p>
+  </main>
+</body>
+</html>
