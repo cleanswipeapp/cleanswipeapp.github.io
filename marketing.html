@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CleanSwipe - Clean up photos safely</title>
+  <meta name="description" content="Review similar photos, screenshots, duplicates, and large videos on your iPhone. CleanSwipe keeps every cleanup decision in your hands.">
   <style>
     :root {
       color-scheme: light;
@@ -57,6 +58,30 @@
       color: var(--muted);
       font-size: 1.2rem;
       margin: 22px 0 0;
+    }
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 58px;
+      margin-top: 28px;
+      padding: 0 24px;
+      border-radius: 999px;
+      background: var(--blue);
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 12px 28px rgba(52, 120, 246, 0.24);
+    }
+    .hero-cta:focus-visible {
+      outline: 3px solid var(--text);
+      outline-offset: 3px;
+    }
+    .cta-note {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
     }
     .chips {
       display: flex;
@@ -181,6 +206,10 @@
           blurry shots, then turns cleanup into a fast review. You choose what
           stays. Nothing is deleted until final confirmation.
         </p>
+        <a class="hero-cta" href="https://apps.apple.com/us/app/cleanswipe-photo-cleaner/id6784292572">
+          View CleanSwipe on the App Store
+        </a>
+        <p class="cta-note">Available for iPhone in the U.S. App Store.</p>
         <div class="chips">
           <span class="chip">On-device scan</span>
           <span class="chip">Swipe review</span>
