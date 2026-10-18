@@ -339,6 +339,38 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.035em; line-height: 1.04; }
 }
 .finds svg { width: 20px; height: 20px; color: var(--blue-2); }
 
+
+/* ---------- Showcase ---------- */
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  margin-top: 70px;
+  padding: 56px;
+  border-radius: 40px;
+  border: 1px solid var(--stroke);
+  background:
+    radial-gradient(70% 90% at 100% 0%, rgba(169, 108, 242, 0.16), transparent 60%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015));
+  overflow: hidden;
+}
+.showcase-copy h3 { font-size: clamp(1.6rem, 3vw, 2.2rem); letter-spacing: -0.03em; line-height: 1.1; }
+.showcase-copy p { margin: 14px 0 0; color: var(--muted); font-size: 1.06rem; }
+.showcase-phones { display: flex; justify-content: center; gap: 18px; }
+.showcase-phones .phone { width: 220px; border-radius: 40px; padding: 8px; }
+.showcase-phones .phone img { border-radius: 33px; }
+.showcase-phones .phone:nth-child(2) { margin-top: 60px; }
+@media (max-width: 980px) {
+  .showcase { grid-template-columns: 1fr; padding: 36px 24px; }
+}
+@media (max-width: 720px) {
+  .showcase { border-radius: 30px; gap: 34px; margin-top: 48px; }
+  .showcase-phones .phone { width: 46%; max-width: 190px; border-radius: 30px; padding: 6px; }
+  .showcase-phones .phone img { border-radius: 25px; }
+  .showcase-phones .phone:nth-child(2) { margin-top: 40px; }
+}
+
 /* ---------- Steps ---------- */
 .steps { display: grid; gap: 22px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .step {
