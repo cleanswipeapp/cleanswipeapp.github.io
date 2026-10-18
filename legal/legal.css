@@ -51,7 +51,14 @@ main {
 }
 
 nav {
-  margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 18px;
+  margin-bottom: 40px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--divider);
+  font-size: 0.92rem;
 }
 
 :root[data-theme="dark"] nav {
@@ -59,27 +66,38 @@ nav {
 }
 
 nav a {
+  color: var(--muted);
+  font-weight: 550;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+nav a.brand {
   display: inline-flex;
   align-items: center;
-  min-height: 34px;
-  padding: 0 12px;
-  border: 1px solid rgba(78, 143, 255, 0.24);
-  border-radius: 999px;
-  background: rgba(78, 143, 255, 0.1);
-  color: var(--blue);
-  font-size: 0.86rem;
+  gap: 9px;
+  margin-right: auto;
+  color: var(--text);
+  font-size: 1.02rem;
   font-weight: 700;
-  letter-spacing: 0.01em;
-  text-decoration: none;
+}
+
+nav a.brand img {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
 }
 
 h1 {
   margin: 0;
   color: var(--text);
-  font-size: 1.35rem;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  font-size: 1.9rem;
+  font-weight: 750;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
 }
 
 .document-summary {
@@ -198,7 +216,7 @@ a.card strong {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
 
   .card {
