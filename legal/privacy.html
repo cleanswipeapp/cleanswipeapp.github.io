@@ -2,131 +2,314 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>CleanSwipe Privacy Policy</title>
-  <meta name="theme-color" content="#04070d">
+  <meta name="description" content="CleanSwipe keeps cleanup local and user-controlled.">
+  <meta name="theme-color" content="#05070C">
+  <link rel="canonical" href="https://cleanswipeapp.github.io/legal/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CleanSwipe">
+  <meta property="og:title" content="CleanSwipe Privacy Policy">
+  <meta property="og:description" content="CleanSwipe keeps cleanup local and user-controlled.">
+  <meta property="og:url" content="https://cleanswipeapp.github.io/legal/privacy.html">
+  <meta property="og:image" content="https://cleanswipeapp.github.io/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="/assets/img/favicon.png">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="./legal.css">
+  <script src="./legal.js" defer></script>
 </head>
-<body>
-  <main>
-    <nav><a class="brand" href="/"><img src="/assets/img/icon-256.png" alt="" width="26" height="26">CleanSwipe</a><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a></nav>
-    <h1>Privacy Policy</h1>
-    <p class="document-summary">CleanSwipe keeps cleanup local and user-controlled.</p>
-    <p class="meta">Last updated: September 30, 2026</p>
+<body id="top">
+  <!-- Icon sprite (stroke style, 24x24, round caps) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.4 3 8.2 7.5 9.5 4.5-1.3 7.5-5.1 7.5-9.5V6L12 3Z"/><path d="m9 12 2.2 2.2 3.8-4.2"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+    </defs>
+  </svg>
 
-    <div class="card">
-      <p>
-        CleanSwipe analyzes photos on your device and does not upload photo or
-        video content. Apple manages iCloud Photos sync if you enable it.
-        CleanSwipe has no separate backend account system or ad SDK. It uses
-        Firebase Analytics Core and Firebase Crashlytics for app usage and
-        diagnostic reporting, and RevenueCat for subscription entitlements.
-      </p>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="capsule">
+      <a class="brand" href="/" aria-label="CleanSwipe home">
+        <img src="/assets/img/icon-256.png" alt="" width="32" height="32">
+        CleanSwipe
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="/#how">How it works</a>
+        <a href="/#privacy">Privacy</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/support.html">Support</a>
+      </nav>
+      <a class="btn" href="https://apps.apple.com/us/app/cleanswipe-photo-cleaner/id6784292572">Get the app</a>
     </div>
+  </header>
 
-    <h2>Photo Library</h2>
-    <p>
-      CleanSwipe scans photos and videos locally on the user's device through
-      Apple's PhotoKit framework. CleanSwipe does not upload photo or video
-      content. If iCloud Photos is enabled, Apple syncs the Photos library and
-      deletion can sync to other devices. CleanSwipe may save local-only analysis indexes,
-      review snapshots, and generated thumbnails on the device to make future
-      scans faster. The user can clear this local analysis data in Settings; this
-      does not delete anything from Photos.
-    </p>
+  <main id="main" tabindex="-1">
+    <div class="shell">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/legal/">Legal</a></li>
+          <li aria-current="page">Privacy Policy</li>
+        </ol>
+      </nav>
 
-    <h2>People Groups</h2>
-    <p>
-      If the bundled SFace Core ML model passes its local startup check and the user
-      starts a People Scan, CleanSwipe creates anonymous 128-dimensional face
-      embeddings and groups only on that iPhone. It does not import names or
-      group assignments from Apple Photos, does not upload faces, crops,
-      embeddings, identifiers, or group membership, and does not keep separate
-      copies of photos. Release diagnostics keep only aggregate processing-stage
-      counters and never include photos, crops, embeddings, memberships, or
-      identifiers. Clear Local Analysis removes the derived embeddings and groups
-      without deleting photos.
-    </p>
+      <div class="doc-head">
+        <h1>Privacy Policy</h1>
+        <p class="document-summary">CleanSwipe keeps cleanup local and user-controlled.</p>
+        <p class="meta">Last updated: September 30, 2026</p>
+      </div>
 
-    <h2>Photo Map</h2>
-    <p>
-      The Library map groups photos and videos using location metadata already
-      saved in each item. CleanSwipe keeps this index on the device and does not
-      send photo coordinates or identifiers to CleanSwipe analytics or servers.
-      Apple Maps provides the map and may receive the visible map area and map
-      interactions needed to display it. CleanSwipe does not request the user's
-      current location. Clear Local Analysis removes the saved map index.
-    </p>
+      <div class="layout">
+        <aside class="toc">
+          <nav class="toc-d" aria-labelledby="toc-title">
+            <p class="toc-title" id="toc-title">On this page</p>
+            <ol class="toc-list">
+              <li><a href="#photo-library">Photo Library</a></li>
+              <li><a href="#people-groups">People Groups</a></li>
+              <li><a href="#photo-map">Photo Map</a></li>
+              <li><a href="#home-place-names">Home Place Names</a></li>
+              <li><a href="#clutter-suggestions">Clutter Suggestions</a></li>
+              <li><a href="#cleanup-control">Cleanup Control</a></li>
+              <li><a href="#ai-best-shot">AI Best Shot</a></li>
+              <li><a href="#purchases">Purchases</a></li>
+              <li><a href="#optional-meta-install-measurement">Optional Meta Install Measurement</a></li>
+              <li><a href="#data-collection">Data Collection</a></li>
+              <li><a href="#your-choices">Your Choices</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ol>
+          </nav>
+          <details class="toc-m">
+            <summary><span>On this page</span><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></summary>
+            <nav aria-label="On this page">
+              <ol class="toc-list">
+                <li><a href="#photo-library">Photo Library</a></li>
+                <li><a href="#people-groups">People Groups</a></li>
+                <li><a href="#photo-map">Photo Map</a></li>
+                <li><a href="#home-place-names">Home Place Names</a></li>
+                <li><a href="#clutter-suggestions">Clutter Suggestions</a></li>
+                <li><a href="#cleanup-control">Cleanup Control</a></li>
+                <li><a href="#ai-best-shot">AI Best Shot</a></li>
+                <li><a href="#purchases">Purchases</a></li>
+                <li><a href="#optional-meta-install-measurement">Optional Meta Install Measurement</a></li>
+                <li><a href="#data-collection">Data Collection</a></li>
+                <li><a href="#your-choices">Your Choices</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ol>
+            </nav>
+          </details>
+        </aside>
 
-    <h2>Home Place Names</h2>
-    <p>
-      Place Names is on by default in Settings &gt; Advanced. When a trip or
-      place suggestion appears on Home, CleanSwipe may ask Apple's reverse
-      geocoder for a city name using only the center of an approximate 5 km
-      area. It does not send an individual photo's coordinates, identifier,
-      or date. Requests are rate-limited and names are cached on this device.
-      You can turn Place Names off or remove cached names with Clear Local
-      Analysis.
-    </p>
+        <article class="prose">
+          <div class="callout">
+            <span class="tile"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg></span>
+            <p>
+              CleanSwipe analyzes photos on your device and does not upload photo or video content. Apple
+              manages iCloud Photos sync if you enable it. CleanSwipe has no separate backend account system.
+              It includes the Meta iOS SDK for optional install measurement. Meta measurement runs only after
+              you grant App Tracking Transparency permission. The app also uses Firebase Analytics Core and
+              Firebase Crashlytics for usage and diagnostics, and RevenueCat for subscription entitlements.
+            </p>
+          </div>
 
-    <h2>Clutter Suggestions</h2>
-    <p>
-      CleanSwipe checks photos and videos on the device for possible receipts
-      and documents, accidental shots, and very short videos. These are only
-      suggestions. CleanSwipe does not upload the images or automatically
-      delete suggested items.
-    </p>
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="photo-library">Photo Library</h2>
+              <a class="anchor" href="#photo-library" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              CleanSwipe scans photos and videos locally on the user's device through Apple's PhotoKit
+              framework. CleanSwipe does not upload photo or video content. If iCloud Photos is enabled, Apple
+              syncs the Photos library and deletion can sync to other devices. CleanSwipe may save local-only
+              analysis indexes, review snapshots, and generated thumbnails on the device to make future scans
+              faster. CleanSwipe manages this local analysis data and resets it when photo access changes.
+              This does not delete anything from Photos.
+            </p>
+          </section>
 
-    <h2>Cleanup Control</h2>
-    <p>
-      Swipe decisions only create a cleanup list. Photos and videos are not
-      deleted until the user reviews the summary and confirms deletion through
-      the system Photos confirmation flow.
-    </p>
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="people-groups">People Groups</h2>
+              <a class="anchor" href="#people-groups" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              If the bundled SFace Core ML model passes its local startup check and the user starts a People
+              Scan, CleanSwipe creates anonymous 128-dimensional face embeddings and groups only on that
+              iPhone. It does not import names or group assignments from Apple Photos, does not upload faces,
+              crops, embeddings, identifiers, or group membership, and does not keep separate copies of
+              photos. Release diagnostics keep only aggregate processing-stage counters and never include
+              photos, crops, embeddings, memberships, or identifiers. Clearing CleanSwipe's local analysis
+              removes the derived embeddings and groups without deleting photos.
+            </p>
+          </section>
 
-    <h2>AI Best Shot</h2>
-    <p>
-      AI Best Shot recommendations are generated locally from photo quality
-      signals such as focus, lighting, contrast, and composition. AI recommends
-      likely keepers but does not delete photos automatically.
-    </p>
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="photo-map">Photo Map</h2>
+              <a class="anchor" href="#photo-map" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              The Library map groups photos and videos using location metadata already saved in each item.
+              CleanSwipe keeps this index on the device and does not send photo coordinates or identifiers to
+              CleanSwipe analytics or servers. Apple Maps provides the map and may receive the visible map
+              area and map interactions needed to display it. CleanSwipe does not request the user's current
+              location. Clearing CleanSwipe's local analysis removes the saved map index.
+            </p>
+          </section>
 
-    <h2>Purchases</h2>
-    <p>
-      Premium entitlement is handled through RevenueCat and App Store purchases.
-      RevenueCat may process purchase history for app functionality. CleanSwipe
-      does not store payment information or process payment card data.
-    </p>
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="home-place-names">Home Place Names</h2>
+              <a class="anchor" href="#home-place-names" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              CleanSwipe manages place names for Home suggestions. When a trip or place suggestion appears on
+              Home, CleanSwipe may ask Apple's reverse geocoder for a city name using only the center of an
+              approximate 5 km area. It does not send an individual photo's coordinates, identifier, or date.
+              Requests are rate-limited and names are cached on this device. CleanSwipe resets cached place
+              names when local photo access is reset.
+            </p>
+          </section>
 
-    <h2>Data Collection</h2>
-    <p>
-      Firebase may collect app usage, device/app, and diagnostic/crash data for
-      Analytics and Crashlytics. Firebase events are limited to screen/action
-      names and aggregate counts or categories, such as scan totals, review
-      scope, cleanup category, and cleanup outcome counts. CleanSwipe does not send photo or video content,
-      filenames, local photo identifiers, thumbnails, raw scan output, item-level
-      cleanup decisions, purchase receipts, payment information, or precise
-      location or photo coordinates to Firebase. RevenueCat may process purchase
-      history for Premium entitlement. Apple Maps may receive the visible map
-      area and map interactions to render the Library map, and the approximate
-      Home suggestion area when Place Names is enabled.
-    </p>
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="clutter-suggestions">Clutter Suggestions</h2>
+              <a class="anchor" href="#clutter-suggestions" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              CleanSwipe checks photos and videos on the device for possible receipts and documents,
+              accidental shots, and very short videos. These are only suggestions. CleanSwipe does not upload
+              the images or automatically delete suggested items.
+            </p>
+          </section>
 
-    <h2>Your Choices</h2>
-    <p>
-      You can limit or revoke Photos access in iOS Settings. Clear Local
-      Analysis removes CleanSwipe's saved analysis indexes and derived People
-      groups without deleting items from Photos. You can manage subscriptions
-      through your Apple account.
-    </p>
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="cleanup-control">Cleanup Control</h2>
+              <a class="anchor" href="#cleanup-control" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              Swipe decisions only create a cleanup list. Photos and videos are not deleted until the user
+              reviews the summary and confirms deletion through the system Photos confirmation flow.
+            </p>
+          </section>
 
-    <h2>Contact</h2>
-    <p>
-      For privacy or support questions, use the support link listed on
-      CleanSwipe's App Store product page.
-    </p>
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="ai-best-shot">AI Best Shot</h2>
+              <a class="anchor" href="#ai-best-shot" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              AI Best Shot recommendations are generated locally from photo quality signals such as focus,
+              lighting, contrast, and composition. AI recommends likely keepers but does not delete photos
+              automatically.
+            </p>
+          </section>
+
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="purchases">Purchases</h2>
+              <a class="anchor" href="#purchases" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              Premium entitlement is handled through RevenueCat and App Store purchases. RevenueCat may
+              process purchase history for app functionality. CleanSwipe does not store payment information or
+              process payment card data.
+            </p>
+          </section>
+
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="optional-meta-install-measurement">Optional Meta Install Measurement</h2>
+              <a class="anchor" href="#optional-meta-install-measurement" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              Meta measurement is off unless you allow tracking in iOS. Before you grant permission,
+              CleanSwipe does not initialize the Meta SDK or send app events to Meta. After permission, the
+              SDK sends app activation and session events and device identifiers to Meta for advertising
+              measurement. The SDK may also process limited, non-linked app analytics and crash diagnostics
+              after initialization. If you later revoke permission, CleanSwipe disables ad ID collection on
+              your next return if the SDK is already running. On a fresh launch without permission, the SDK
+              remains uninitialized, and CleanSwipe sends no app activation event. CleanSwipe does not send
+              photos, videos, filenames, local photo identifiers, photo locations, face embeddings, scan
+              results, or cleanup decisions to Meta. You can change this permission in Settings &gt; Privacy
+              &amp; Security &gt; Tracking. Ad measurement is optional and is not needed to use CleanSwipe.
+            </p>
+          </section>
+
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="data-collection">Data Collection</h2>
+              <a class="anchor" href="#data-collection" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              Firebase may collect app usage, device/app, and diagnostic/crash data for Analytics and
+              Crashlytics. Firebase events are limited to screen/action names and aggregate counts or
+              categories, such as scan totals, review scope, cleanup category, and cleanup outcome counts.
+              CleanSwipe does not send photo or video content, filenames, local photo identifiers, thumbnails,
+              raw scan output, item-level cleanup decisions, purchase receipts, payment information, or
+              precise location or photo coordinates to Firebase. RevenueCat may process purchase history for
+              Premium entitlement. Apple Maps may receive the visible map area and map interactions to render
+              the Library map, and the approximate Home suggestion area when Place Names is enabled.
+            </p>
+          </section>
+
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="your-choices">Your Choices</h2>
+              <a class="anchor" href="#your-choices" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              You can limit or revoke Photos access in iOS Settings. CleanSwipe resets local analysis when
+              photo access changes without deleting items from Photos. You can change ad measurement
+              permission in Settings &gt; Privacy &amp; Security &gt; Tracking. You can manage subscriptions
+              through your Apple account.
+            </p>
+          </section>
+
+          <section class="sec">
+            <div class="sec-head">
+              <h2 id="contact">Contact</h2>
+              <a class="anchor" href="#contact" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+            </div>
+            <p>
+              For privacy or support questions, use the support link listed on CleanSwipe's App Store product
+              page.
+            </p>
+          </section>
+
+          <div class="article-end">
+            <a class="to-top" href="#top"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-up"/></svg>Back to top</a>
+            <nav class="related" aria-label="Related pages">
+              <a class="rel-card" href="/legal/terms.html">
+                <span><strong>Terms of Use</strong> Subscription terms, AI Best Shot behavior, cancellation, and EULA.</span>
+                <svg class="ic" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg>
+              </a>
+              <a class="rel-card" href="/support.html">
+                <span><strong>Support</strong> Contact and help topics.</span>
+                <svg class="ic" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg>
+              </a>
+            </nav>
+          </div>
+        </article>
+      </div>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/img/icon-256.png" alt="" width="28" height="28">CleanSwipe</a>
+      <span>© 2026 CleanSwipe</span>
+      <nav aria-label="Footer">
+        <a href="/support.html">Support</a>
+        <a href="/legal/privacy.html">Privacy</a>
+        <a href="/legal/terms.html">Terms</a>
+        <a href="mailto:azizconi1@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
