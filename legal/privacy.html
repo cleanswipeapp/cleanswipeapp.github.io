@@ -60,7 +60,7 @@
       <div class="doc-head">
         <h1>Privacy Policy</h1>
         <p class="document-summary">CleanSwipe keeps cleanup local and user-controlled.</p>
-        <p class="meta">Last updated: November 10, 2026</p>
+        <p class="meta">Last updated: November 20, 2026</p>
       </div>
 
       <div class="layout">
@@ -71,7 +71,7 @@
               <li><a href="#photo-library">Photo Library</a></li>
               <li><a href="#people-groups">People Groups</a></li>
               <li><a href="#photo-map">Photo Map</a></li>
-              <li><a href="#home-place-names">Home Place Names</a></li>
+              <li><a href="#place-names">Place Names</a></li>
               <li><a href="#clutter-suggestions">Clutter Suggestions</a></li>
               <li><a href="#cleanup-control">Cleanup Control</a></li>
               <li><a href="#ai-best-shot">AI Best Shot</a></li>
@@ -89,7 +89,7 @@
                 <li><a href="#photo-library">Photo Library</a></li>
                 <li><a href="#people-groups">People Groups</a></li>
                 <li><a href="#photo-map">Photo Map</a></li>
-                <li><a href="#home-place-names">Home Place Names</a></li>
+                <li><a href="#place-names">Place Names</a></li>
                 <li><a href="#clutter-suggestions">Clutter Suggestions</a></li>
                 <li><a href="#cleanup-control">Cleanup Control</a></li>
                 <li><a href="#ai-best-shot">AI Best Shot</a></li>
@@ -141,8 +141,8 @@
               iPhone. It does not import names or group assignments from Apple Photos, does not upload faces,
               crops, embeddings, identifiers, or group membership, and does not keep separate copies of
               photos. Release diagnostics keep only aggregate processing-stage counters and never include
-              photos, crops, embeddings, memberships, or identifiers. Clearing CleanSwipe's local analysis
-              removes the derived embeddings and groups without deleting photos.
+              photos, crops, embeddings, memberships, or identifiers. CleanSwipe removes the derived
+              embeddings and groups when Photos access changes or the app is deleted, without deleting photos.
             </p>
           </section>
 
@@ -156,21 +156,21 @@
               CleanSwipe keeps this index on the device and does not send photo coordinates or identifiers to
               CleanSwipe analytics or servers. Apple Maps provides the map and may receive the visible map
               area and map interactions needed to display it. CleanSwipe does not request the user's current
-              location. Clearing CleanSwipe's local analysis removes the saved map index.
+              location. The saved map index is removed when Photos access changes or the app is deleted.
             </p>
           </section>
 
           <section class="sec">
             <div class="sec-head">
-              <h2 id="home-place-names">Home Place Names</h2>
-              <a class="anchor" href="#home-place-names" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
+              <h2 id="place-names">Place Names</h2>
+              <a class="anchor" href="#place-names" aria-label="Link to this section"><span aria-hidden="true">#</span></a>
             </div>
             <p>
-              CleanSwipe manages place names for Home suggestions. When a trip or place suggestion appears on
-              Home, CleanSwipe may ask Apple's reverse geocoder for a city name using only the center of an
+              CleanSwipe manages place names for Home suggestions and Events. When a trip or place suggestion
+              appears on Home, or an event is shown in Browse, CleanSwipe may ask Apple's reverse geocoder for a city name using only the center of an
               approximate 5 km area. It does not send an individual photo's coordinates, identifier, or date.
               Requests are rate-limited and names are cached on this device. CleanSwipe resets cached place
-              names when local photo access is reset.
+              names when local photo access is reset. Place names can be turned off in Settings → Privacy.
             </p>
           </section>
 
@@ -256,7 +256,7 @@
               raw scan output, item-level cleanup decisions, purchase receipts, payment information, or
               precise location or photo coordinates to Firebase. RevenueCat may process purchase history for
               Premium entitlement. Apple Maps may receive the visible map area and map interactions to render
-              the Library map, and the approximate Home suggestion area when Place Names is enabled.
+              the Library map, and the approximate Home suggestion or event area when Place Names is enabled.
             </p>
           </section>
 
